@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  ruby:
+    build: .
+    tty: true
+    volumes:
+      - .:/app
+      - bundle:/usr/local/bundle
+    ports:
+      - "8080:8080"
+volumes:
+  bundle:
