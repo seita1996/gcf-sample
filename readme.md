@@ -30,3 +30,14 @@ curl http://localhost:8080
 
 ## Deploy
 
+Attach container and initialize gcloud.
+
+```
+# gcloud init --no-launch-browser
+```
+
+Deploy to GCF.
+
+```
+# gcloud functions deploy gcf-sample --runtime ruby30 --trigger-http --memory=128MB --region=asia-northeast1 --entry-point=hello
+```

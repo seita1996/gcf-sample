@@ -1,0 +1,6 @@
+.git
+.editorconfig
+.gcloudignore
+docker-compose.yml
+Dockerfile
+readme.md
